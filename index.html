@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fund Me DApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fund Me DApp</h1>
+      <button id="connectButton">Connect Wallet</button>
+
+      <div class="input-container">
+        <label for="ethAmount">ETH Amount</label>
+        <input
+          type="number"
+          id="ethAmount"
+          placeholder="0.1"
+          min="0.01"
+          step="0.01"
+        />
+      </div>
+
+      <button id="fundButton">Fund</button>
+      <button id="balanceButton">Get Balance</button>
+      <button id="withdrawButton">Withdraw</button>
+
+      <!-- Response Display Area -->
+      <div id="responseMessage" class="response-container"></div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
