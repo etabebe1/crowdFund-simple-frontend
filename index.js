@@ -92,6 +92,7 @@ async function getBalance() {
       const balance = await provider.getBalance(contractAddress)
       const formattedBalance = ethers.formatEther(balance)
       displayMessage(`Contract Balance: ${formattedBalance} ETH`)
+      console.log(formattedBalance)
     } catch (error) {
       console.error(error)
       displayMessage("Error fetching balance", "error")
